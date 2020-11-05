@@ -145,7 +145,8 @@ class HBNBCommand(cmd.Cmd):
                          "State", "User"}:
             if len(args) >= 2:
                 for value in storage.all().values():
-                    if value.id == args[1]:
+                    if (value.__class__.__name__ == args[0] and
+                            value.id == args[1]):
                         print(value)
                         break
                 else:
