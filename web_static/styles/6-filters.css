@@ -2,7 +2,15 @@
   box-sizing: border-box;
 }
 
-button {
+.filters {
+  background-color: white;
+  height: 70px;
+  width: 100%;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+}
+
+.filters button {
   font-size: 18px;
   background-color: #FF5A5F;
   color: #FFFFFF;
@@ -14,19 +22,11 @@ button {
   margin-right: 30px;
 }
 
-button:hover {
+.filters button:hover {
   opacity: 90%;
 }
 
-.filters {
-  background-color: white;
-  height: 70px;
-  width: 100%;
-  border: 1px solid #DDDDDD;
-  border-radius: 4px;
-}
-
-.locations {
+.filters .locations {
   height: 100%;
   width: 25%;
   border-right: 1px solid #DDDDDD;
@@ -35,7 +35,7 @@ button:hover {
   text-indent: 20%;
 }
 
-.amenities {
+.filters .amenities {
   height: 100%;
   width: 25%;
   line-height: 50%;
@@ -43,7 +43,7 @@ button:hover {
   text-indent: 20%;
 }
 
-.popover {
+.filters .popover {
   visibility: hidden;
   background-color: #FAFAFA;
   width: 100%;
@@ -52,34 +52,34 @@ button:hover {
   list-style-type: none;
 }
 
-.locations:hover .popover,
-.amenities:hover .popover {
+.filters .locations:hover .popover,
+.filters .amenities:hover .popover {
   visibility: visible;
 }
 
-ul {
+.filters ul {
   list-style-type: none;
   padding: 0;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-li {
+.filters li {
   text-indent: 20%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-h2 {
+.filters h2 {
   font-size: 16px;
   text-indent: 10%;
 }
 
-h3 {
+.filters h3 {
   font-weight: 600;
 }
 
-h4 {
+.filters h4 {
   font-weight: 400;
   font-size: 14px;
 }
