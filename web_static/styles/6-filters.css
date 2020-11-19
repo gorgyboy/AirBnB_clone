@@ -50,6 +50,8 @@
   border: 1px solid #DDDDDD;
   border-radius: 4px;
   list-style-type: none;
+  position: relative;
+  z-index: 2;
 }
 
 .filters .locations:hover .popover,
